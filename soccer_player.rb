@@ -19,8 +19,4 @@ class SoccerPlayer
   def self_intro
     "My name is #{@name}, I am a soccer player from the #{@club}  and I earn $#{@salary}."
   end
-
-  def self.total_salary(players)
-    players.reduce(0) { |acc, player| acc + player.salary }
-  end
 end
