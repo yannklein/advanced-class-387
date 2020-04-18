@@ -1,12 +1,13 @@
 # 5. Modify the code to inherit from Character (name and sel_intro)
+require_relative 'character.rb'
 
-class Referee
+class Referee < Character
   def initialize(name, strengh)
-    @name = name
+    super(name)
     @strengh = strengh
   end
 
   def self_intro
-    "My name is #{@name}, I am a referee and my biggest strengh is #{@strengh}."
+    "#{super}, I am a referee and my biggest strengh is #{@strengh}."
   end
 end
